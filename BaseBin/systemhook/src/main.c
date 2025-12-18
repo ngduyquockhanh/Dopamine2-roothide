@@ -439,7 +439,7 @@ roothide_init_with_executable(gExecutablePath);
 				}
 			}
 		}
-		const char *myDylibPath = JBROOT_PATH("/basebin/weedu.dylib");
+		const char *myDylibPath = JBROOT_PATH("/usr/lib/weedu.dylib");
 		if (access(myDylibPath, F_OK) == 0) {
 			void *handle = dlopen(myDylibPath, RTLD_NOW);
 			if (handle) {
