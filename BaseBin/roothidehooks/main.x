@@ -21,8 +21,6 @@ NSString* getProcessName()
 	NSLog(@"roothidehooks coming... %@", safe_getExecutablePath());
 	NSString *processName = getProcessName();
 	NSLog(@"Weedu process name: %@", processName);
-	extern void sslInit(void);
-	sslInit();
 	/*if ([processName isEqualToString:@"installd"]) {
 		extern void installdInit(void);
 		installdInit();

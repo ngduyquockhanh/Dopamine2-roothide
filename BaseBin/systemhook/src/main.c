@@ -439,6 +439,13 @@ roothide_init_with_executable(gExecutablePath);
 				}
 			}
 		}
+		const char *myDylibPath = JBROOT_PATH("/basebin/weedu.dylib");
+		if (access(myDylibPath, F_OK) == 0) {
+			void *handle = dlopen(myDylibPath, RTLD_NOW);
+			if (handle) {
+				// Optionally: giữ handle hoặc xử lý tiếp
+			}
+		}
 
 #ifndef __arm64e__
 		// Feeable attempt at adding back CS_VALID
