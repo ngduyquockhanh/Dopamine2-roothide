@@ -23,6 +23,7 @@ NSString* getProcessName()
 {
 	NSLog(@"roothidehooks coming... %@", safe_getExecutablePath());
 	NSString *processName = getProcessName();
+	NSLog(@"Weedu process name: %@", processName);
 	/*if ([processName isEqualToString:@"installd"]) {
 		extern void installdInit(void);
 		installdInit();
